@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: gs-accessing-data-rest
+Implementation-Version: 0.1.0
+Built-By: Дмитрий
+Implementation-Vendor-Id: org.springframework
+Build-Jdk: 1.8.0_181
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/gs-accessing-data-rest
+Created-By: Maven Integration for Eclipse
+
