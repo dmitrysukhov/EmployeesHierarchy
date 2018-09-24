@@ -1,24 +1,25 @@
 package employee;
 
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
 import org.springframework.data.annotation.Id;
 
 public class EmployeePerson {
 
+
 	@Id private String id;
 
-	@NotNull
-    @Size(min=2, max=30)
 	private String firstName;
-	
 	private String lastName;
 	private String contactNumber;
 	private String email;
 	private String position;
 	private String directHead;
 
+	public EmployeePerson(String firstName, String lastName) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
 	public String getFirstName() {
 		return firstName;
 	}
