@@ -1,4 +1,3 @@
-
 package employee;
 
 import java.util.List;
@@ -19,11 +18,6 @@ public interface EmployeePersonRepository extends MongoRepository<EmployeePerson
 	List<EmployeePerson> findByLastNameLike(@Param("name") String name);
 	List<EmployeePerson> findByLastNameEndingWith(@Param("name") String name);
 	
-	// find by email name
+	// find by email
 	List<EmployeePerson> findByEmailLike(@Param("email") String email);
-	
-	// find by position name
-
-	List<EmployeePerson> findByPosition(@Param("title") String title);
-
 }
