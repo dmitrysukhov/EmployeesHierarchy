@@ -10,16 +10,14 @@ import employee.models.EmployeePerson;
 
 @RepositoryRestResource(collectionResourceRel = "employee", path = "employee")
 public interface EmployeePersonRepository extends MongoRepository<EmployeePerson, String> {
-	
-	// find by first name
+
 	List<EmployeePerson> findByFirstNameLike(@Param("name") String name);
 	
 	List<EmployeePerson> findByFirstNameLikeAndLastNameLike(@Param("firstName") String firstName, @Param("lastName") String lastName);
 	
-	// find by last name
 	List<EmployeePerson> findByLastNameLike(@Param("name") String name);
-	List<EmployeePerson> findByLastNameEndingWith(@Param("name") String name);
 	
-	// find by email
+	List<EmployeePerson> findByLastNameEndingWith(@Param("name") String name);
+
 	List<EmployeePerson> findByEmailLike(@Param("email") String email);
 }
