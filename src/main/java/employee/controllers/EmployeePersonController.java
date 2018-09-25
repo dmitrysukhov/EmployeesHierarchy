@@ -1,4 +1,4 @@
-package employee;
+package employee.controllers;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.config.AbstractMongoConfiguration;
@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import com.mongodb.MongoClient;
+
+import employee.models.EmployeePerson;
 
 @Configuration 
 @EnableMongoAuditing

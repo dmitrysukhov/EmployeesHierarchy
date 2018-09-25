@@ -1,4 +1,4 @@
-package employee;
+package employee.models;
 
 import javax.validation.constraints.NotNull;
 
